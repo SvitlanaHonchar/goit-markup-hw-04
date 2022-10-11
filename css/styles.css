@@ -380,12 +380,33 @@ body {
 }
 
 .team-text {
-  /* margin-bottom: 30px; */
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.icon-social-list {
+  display: flex;
+  column-gap: 10px;
+}
+
+.icon-container-team {
+  padding: 12px;
+  border-radius: 50%;
+  fill: var(--clients-border-color);
+}
+
+.icon-container-team:hover,
+.icon-container-team:focus {
+  fill: var(--additional-text-color);
+  background-color: var(--logo-text-color-blue);
+}
+
+.icon-social-item {
+  display: block;
 }
 
 .team-bottom-part {
