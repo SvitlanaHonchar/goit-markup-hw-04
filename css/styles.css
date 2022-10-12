@@ -394,19 +394,28 @@ body {
 }
 
 .icon-container-team {
-  padding: 12px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  fill: var(--clients-border-color);
 }
 
 .icon-container-team:hover,
 .icon-container-team:focus {
-  fill: var(--additional-text-color);
   background-color: var(--logo-text-color-blue);
+}
+
+.icon-container-team:hover .icon-social-item,
+.icon-container-team:focus .icon-social-item {
+  fill: var(--additional-text-color);
 }
 
 .icon-social-item {
   display: block;
+  fill: var(--clients-border-color);
 }
 
 .team-bottom-part {
@@ -422,7 +431,7 @@ body {
 
 .clients-list-item {
   padding: 16px 32px;
-  border: 1px;
+  border: 1px solid;
   border-color: var(--clients-border-color);
   border-radius: 4px;
   color: #afb1b8;
@@ -434,8 +443,9 @@ body {
 
 .clients-list-item:hover,
 .clients-list-item:focus {
-  color: #2196f3;
+  color: var(--logo-text-color-blue);
   cursor: pointer;
+  border: 1px solid var(--logo-text-color-blue);
 }
 /* ----------------ПОРТФОЛІО (початок)---------- */
 
