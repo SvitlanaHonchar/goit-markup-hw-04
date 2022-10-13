@@ -107,10 +107,12 @@ body {
 
 .icon-container {
   margin-bottom: 30px;
-  padding: 25px 100px;
   border-radius: 4px;
-  /* width: 270px;
-  height: 120px; */
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: var(--section-two-color);
 }
@@ -256,8 +258,8 @@ body {
     ),
     url(../images/imghero.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -430,19 +432,34 @@ body {
 }
 
 .clients-list-item {
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  /* padding: 16px 32px; */
+  /* border: 1px solid;
+  border-color: var(--clients-border-color);
+  border-radius: 4px;
+  color: #afb1b8; */
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid;
   border-color: var(--clients-border-color);
   border-radius: 4px;
   color: #afb1b8;
+
+  width: 100%;
+  height: 100%;
 }
 
 .icon-logo-clients {
   fill: currentColor;
 }
 
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients-list-link:hover,
+.clients-list-link:focus {
   color: var(--logo-text-color-blue);
   cursor: pointer;
   border: 1px solid var(--logo-text-color-blue);
@@ -494,8 +511,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-link {
+  display: block;
+  color: inherit;
+}
+
+.projects-list-link:hover,
+.projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
